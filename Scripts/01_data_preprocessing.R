@@ -5,7 +5,7 @@
 # Load required library
 library(readr)
 # Load raw count dataset
-raw_data <- read_tsv (data/"GSE273835_Raw_counts_for_THP.tsv")
+raw_data <- read_tsv ("GSE273835_Raw_counts_for_THP.tsv")
 # Convert to data frame (optional, for compatibility)
 raw_data <- as.data.frame (raw_data)
 # ------------------------------------------------
