@@ -23,7 +23,7 @@ run_limma <- function (count_matrix, output_name) {
   # Extract results
   results <- topTable(fit, coef=2, number=Inf)
   # Filter significant DEGs
-  deg <- results_AV[results$adj.P.Val < 0.05 &abs(results_AV$logFC) > 1,]
+  deg <- results[results$adj.P.Val < 0.05 &abs(results$logFC) > 1,]
   #Save results
   write.csv(deg, paste0("DEG_results_", output_name,"_limma.csv"))
 }
