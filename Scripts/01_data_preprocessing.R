@@ -67,7 +67,7 @@ merged <- merge(merged, inf2, by = "Geneid")
 merged <- merge(merged, inf3, by = "Geneid")
 # Create count matrix
 rownames(merged) <- merged$Geneid
-counts_LG <- merged[, -1] # remove Geneid column
-counts_LG <- as.matrix(counts_LG)
+counts_LP <- merged[, -1] # remove Geneid column
+counts_LP <- as.matrix(counts_LP)
 # Preview
-head(counts_LG)
+head(counts_LP)
