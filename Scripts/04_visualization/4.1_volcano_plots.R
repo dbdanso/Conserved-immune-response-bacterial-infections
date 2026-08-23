@@ -29,7 +29,7 @@ plot_volcano <- function(results_df, title_name) {
   ns_count <- ifelse(is.na(ns_count), 0, ns_count)
   # create a column named X in results_df
   results_df$X <- rownames(results_df)
-  # Convert gene symbols (Use helper function in conserved_gene script)
+  # Convert gene symbols (Use Helper function 1 in conserved_gene script)
   results_df <- convert_symbols(results_df)
   # Select top genes for labeling
   top_up <- results_df %>% filter(logFC > 1 & adj.P.Val < 0.05)
