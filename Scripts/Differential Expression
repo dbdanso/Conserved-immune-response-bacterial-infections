@@ -1,0 +1,21 @@
+# --------------------------------------------------
+# Script: Differential Expression Analysis (limma-voom)
+# Description: Performs differential gene expression analysis across bacterial infection datasets using limma and edgeR
+# ----------------------------------------------------
+# Load required libraries
+library(limma)
+library(edgeR)
+# Define condition vector
+condition <- factor(c("control", "control", "control", "infected", "infected", "infected"))
+design <- model.matrix(~ condition)
+dge_AV <- DGEList(counts_AV)
+dge_AV <- calcNormFactors(dge_AV)
+v_AV <- voom(dge_AV, design, plot=TRUE)
+fit_AV <- lmFit(v_AV, design)
+fit_AV <- eBayes(fit_AV)
+results_AV <- topTable(fit_AV, coef=2, number=Inf)
+deg_AV <- results_AV[results_AV$adj.P.Val < 0.05 &abs(results_AV$logFC) > 1,]
+nrow(deg_AV)
+nrow(counts_AV)
+head(deg_AV)
+write.csv(deg_AV, "DEG_results_AV_limma.csv")
