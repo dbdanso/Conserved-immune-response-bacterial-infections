@@ -11,7 +11,7 @@ deg_AV <- read.csv("DEG_results_AV_limma.csv")
 deg_EC <- read.csv("DEG_results_EC_limma.csv")
 deg_LP <- read.csv("DEG_results_LP_limma.csv")
 deg_MT <- read.csv("DEG_results_MT_limma.csv")
-# Helper function: Convert Ensembl IDs to gene symbols
+# Helper function 1: Convert Ensembl IDs to gene symbols
 convert_symbols <- function(df) {
   #Ensure gene IDs are characters
   df$X <- as.character(df$X)
