@@ -10,16 +10,16 @@ library(enrichplot)
 library(ggplot2)
 library(dplyr)
 # Helper function 2: Preparation of upregulated genes from merged conserved genes data
-prepare_upregulated_genes <- function(merged) {
+prepare_upregulated_genes <- function(merged_df) {
   # Rename columns
-  colnames(merged)[2:5] <- c(
+  colnames(merged_df)[2:5] <- c(
   "A. veronii AS1",
   "E. coli K12",
   "L. pneumophila 130b",
   "M. tuberculosis H37Rv"
 )
   # Extract conserved upregulated genes
-  up_all4 <- merged[rowSums(merged[, 2:5] > 0) == 4,]
+  up_all4 <- merged_df[rowSums(merged_df[, 2:5] > 0) == 4,]
   # Extract gene symbols
   gene_symbols <- up_all4$gene_symbol
   # Convert to ENTREZ IDs
@@ -30,8 +30,9 @@ gene_list <- gene_df$ENTREZID
     list(upregulated_table = up_all4, gene_symbols = gene_symbols, entrez_id = gene_list)
 )
 }
+gene_list <- prepare_upregulated_genes(merged)
 
-go_up <- enrichGO(gene= gene_list_up,OrgDb = org.Hs.eg.db,
+go_up <- enrichGO(gene= gene_list,OrgDb = org.Hs.eg.db,
   ont = "BP",         
   pAdjustMethod = "BH",
   pvalueCutoff  = 0.05,
