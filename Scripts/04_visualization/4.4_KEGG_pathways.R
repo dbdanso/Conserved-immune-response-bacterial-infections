@@ -8,17 +8,22 @@ library(org.Hs.eg.bd)
 library(enrichplot)
 library(ggplot2)
 library(dplyr)
-# Prepare gene list using Helper function 2
-gene_list <- prepare_upregulated_genes(merged)
-# KEGG enrichment
-kegg_up <- enrichKEGG(
+# Helper function 3: Run KEGG enrichment (upregulated genes)
+Kegg_up_enrichment <- function(merged_df) {
+  # Prepare gene list using Helper function 2
+  gene_list <- prepare_upregulated_genes(merged)
+  # KEGG enrichment
+  kegg_up <- enrichKEGG(
   gene = gene_list, organism = "hsa",
   pvalueCutoff = 0.05
 )
-# Convert ENTREZ IDs to gene symbols
-kegg_up <- setReadable(kegg_up,OrgDb = org.Hs.eg.db,keyType = "ENTREZID")
-# Convert to dataframe
-df_kegg <- as.data.frame(kegg_up)
+  # Convert ENTREZ IDs to gene symbols
+  kegg_up <- setReadable(kegg_up,OrgDb = org.Hs.eg.db,keyType = "ENTREZID")
+  # Convert to dataframe
+  df_kegg <- as.data.frame(kegg_up)
+  return(df_kegg)
+}
+df_kegg <- Kegg_up_enrichment(merged)
 # Save full results
 write.csv(df_kegg, "KEGG_upregulated.csv", row.names = FALSE)
 # Select top pathways
