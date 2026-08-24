@@ -21,9 +21,13 @@ Kegg_up_enrichment <- function(merged_df) {
   kegg_up <- setReadable(kegg_up,OrgDb = org.Hs.eg.db,keyType = "ENTREZID")
   # Convert to dataframe
   df_kegg <- as.data.frame(kegg_up)
-  return(df_kegg)
+  return(list(
+    kegg_up = kegg_up, kegg_up_read = kegg_up_read,
+    df_kegg = df_kegg
+  )
 }
-df_kegg <- Kegg_up_enrichment(merged)
+kegg_res <- Kegg_up_enrichment(merged)
+df_kegg <- kegg_res$df_kegg
 # Save full results
 write.csv(df_kegg, "KEGG_upregulated.csv", row.names = FALSE)
 # Select top pathways
