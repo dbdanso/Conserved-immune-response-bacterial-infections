@@ -86,7 +86,9 @@ plot_volcano <- function(results_df, title_name) {
 )
   return(p)
 }
-
-
+volcano_AV <- plot_volcano(results_AV)
+volcano_EC <- plot_volcano(results_EC)
+volcano_LP <- plot_volcano(results_LP)
+volcano_MT <- plot_volcano(results_MT)
   
                         
