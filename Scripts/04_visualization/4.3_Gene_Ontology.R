@@ -63,8 +63,7 @@ df_top$Description <- factor(
        aes(x = GeneRatio,y = Description,
           size = Count,color = p.adjust)
 ) +
-  
-  geom_point(
+geom_point(
 ) +
 scale_x_continuous(limits = c(0, max(df_top$GeneRatio))
 ) +
@@ -77,8 +76,7 @@ labs(
     x = "Gene Ratio", y = "",
     title = "Top 11 Activated Biological Processes"
 ) +
-  
-  theme_minimal(
+theme_minimal(
 ) +
 theme(
   axis.text.y = element_text(size = 10), plot.title = element_text(hjust = 0.5, face = "bold")
