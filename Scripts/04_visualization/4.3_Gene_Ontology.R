@@ -9,27 +9,27 @@ library(AnnotationDbi)
 library(enrichplot)
 library(ggplot2)
 library(dplyr)
-
-colnames(merged)[2:5] <- c(
+# Helper function 2: Preparation of upregulated genes from merged conserved genes data
+prepare_upregulated_genes <- function(merged) {
+  # Rename columns
+  colnames(merged)[2:5] <- c(
   "A. veronii AS1",
   "E. coli K12",
   "L. pneumophila 130b",
-  "M. tuberculosis H37Rv")
-up_all4 <- merged[rowSums(merged[, c("A. veronii AS1","E. coli K12","L. pneumophila 130b","M. tuberculosis H37Rv")] > 0) == 4,]
-down_all4 <- merged[rowSums(merged[, c("A. veronii AS1","E. coli K12","L. pneumophila 130b","M. tuberculosis H37Rv")] < 0) == 4,]
-write.csv(up_all4[,1], "conserved_upregulated_genes.csv")
-write.csv(down_all4[,1], "conserved_downregulated_genes.csv")
-
-library(org.Hs.eg.db)
-library(AnnotationDbi)
-library(clusterProfiler)
-library(org.Hs.eg.db)   
-library(enrichplot)
-library(ggplot2)
-library(dplyr)
-conserved_df_up <- up_all4$gene_symbol
-gene_df_up <- bitr(conserved_df_up, fromType = "SYMBOL",toType = "ENTREZID",OrgDb = org.Hs.eg.db)
-gene_list_up <- gene_df_up$ENTREZID
+  "M. tuberculosis H37Rv"
+)
+  # Extract conserved upregulated genes
+  up_all4 <- merged[rowSums(merged[, 2:5] > 0) == 4,]
+  # Extract gene symbols
+  gene_symbols <- up_all4$gene_symbol
+  # Convert to ENTREZ IDs
+  gene_df <- bitr(
+    gene_symbols, fromType = "SYMBOL",toType = "ENTREZID",OrgDb = org.Hs.eg.db)
+gene_list <- gene_df$ENTREZID
+  return(
+    list(upregulated_table = up_all4, gene_symbols = gene_symbols, entrez_id = gene_list)
+)
+}
 
 go_up <- enrichGO(gene= gene_list_up,OrgDb = org.Hs.eg.db,
   ont = "BP",         
