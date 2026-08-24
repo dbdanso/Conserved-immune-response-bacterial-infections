@@ -1,1 +1,6 @@
+# ---------------------------------------------
+# Script: KEGG Pathway Enrichment Analysis
+# Description: Identifies enriched KEGG pathways among conserved genes
+# ---------------------------------------------
+# Load required libraries
 
