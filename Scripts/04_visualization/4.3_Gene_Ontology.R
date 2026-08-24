@@ -28,14 +28,10 @@ prepare_upregulated_genes <- function(merged_df) {
     toType = "ENTREZID",OrgDb = org.Hs.eg.db
   )
 gene_list <- gene_df$ENTREZID
-  return(
-    list(
-      upregulated_table = up_all4, gene_symbols = gene_symbols, 
-      entrez_id = gene_list
-)
-)
+  return(gene_list)
 }
 gene_list <- prepare_upregulated_genes(merged)
+
 # GO enrichment
 go_up <- enrichGO(
   gene= gene_list, OrgDb = org.Hs.eg.db,
