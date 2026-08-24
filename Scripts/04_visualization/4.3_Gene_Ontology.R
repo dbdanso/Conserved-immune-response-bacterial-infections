@@ -24,10 +24,15 @@ prepare_upregulated_genes <- function(merged_df) {
   gene_symbols <- up_all4$gene_symbol
   # Convert to ENTREZ IDs
   gene_df <- bitr(
-    gene_symbols, fromType = "SYMBOL",toType = "ENTREZID",OrgDb = org.Hs.eg.db)
+    gene_symbols, fromType = "SYMBOL",
+    toType = "ENTREZID",OrgDb = org.Hs.eg.db
+  )
 gene_list <- gene_df$ENTREZID
   return(
-    list(upregulated_table = up_all4, gene_symbols = gene_symbols, entrez_id = gene_list)
+    list(
+      upregulated_table = up_all4, gene_symbols = gene_symbols, 
+      entrez_id = gene_list
+)
 )
 }
 gene_list <- prepare_upregulated_genes(merged)
