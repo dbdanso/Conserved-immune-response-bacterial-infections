@@ -1,2 +1,2 @@
 # Conserved Host Response to Bacterial Infections in THP-1 Macrophages
-Integrative transcriptomic analysis  identifying conserved immune response genes across four bacterial infections using R
+This study investigates conserved transcriptional responses of THP-1-derived macrophages to infection by four bacterial pathogens (Aeromonas veronii AS1, Escherichia coli K12, Legionella pneumophila 130b, 
