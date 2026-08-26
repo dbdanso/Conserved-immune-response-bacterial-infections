@@ -3,7 +3,7 @@ This study investigates conserved transcriptional responses of THP-1-derived mac
 
 # Data Sources
 The datasets used in this study were obtained from the NCBI Gene Expression Omnibus (GEO):
-- Dataset for Aeromonas veronii and Escherichia coli infections = [GSE273835]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi
+- Dataset for Aeromonas veronii and Escherichia coli infections = [GSE273835]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273835
 - Dataset for Legionella pneumophila = [GSM8750865]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi
 - Dataset for Mycobacterium tuberculosis = [GSE275580]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi
 All datasets consist of RNA-seq count data from THP-1 macrophages under control and infected conditions.
