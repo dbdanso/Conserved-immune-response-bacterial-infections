@@ -28,10 +28,16 @@ Overall, these findings reveal a highly conserved pro-inflammatory transcription
 ## Differential Gene Expression Across Bacterial Infections
 <img src="Figures/01_Volcano_combined.png" width="700">
 
-**Figure 1:** Combined volcano plots showing differential gene expression patterns in THP-1 macrophages infected with A. veronii AS1, E. coli K-12, L. pneumophila 130b, and M. tuberculosis H37Rv, respectively. Differentially expressed genes are considered significant if p.adjust < 0.05 and the absolute value of log2FC > 1.
-## Heatmap of Conserved Differentially Expressed Genes Across Bacterial Infections
+**Figure 1:** Combined volcano plots showing differential gene expression patterns in THP-1 macrophages infected with A. veronii AS1, E. coli K-12, L. pneumophila 130b, and M. tuberculosis H37Rv, respectively. Differentially expressed genes are considered significant if p.adjust < 0.05 and the absolute value of log2FC > 1. NS = not significant
+## Conserved Gene Expression Patterns
 <img src="Figures/02_Heatmap_conserved_genes.png" width="700">
-  
+
+**Figure 2:** Heatmap of the top 30 conserved differentially expressed genes in THP-1 macrophages across infections with A. veronii AS1, E. coli K-12, L. pneumophila 130b, and M. tuberculosis H37Rv.
+
+# Enriched Biological Pathways
+<img src="Figures/03_KEGG_pathways.png" width="700">
+
+
 *For full analysis scripts, see the repository contents.*
 
 # Author
