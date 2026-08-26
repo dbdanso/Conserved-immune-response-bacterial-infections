@@ -10,7 +10,7 @@ All datasets consist of RNA-seq count data from THP-1 macrophages under control 
 
 # Methods
 - RNA-seq count data preprocessing
-- Differential gene expression analysis using limma-voom
+- Differential gene expression analysis using *limma-voom*
 - Filtering of significant DEGs (adjusted p-value < 0.05, absolute log2FC > 1)
 - Identification of conserved genes across all infections
 - Gene Ontology (GO) enrichment analysis
@@ -24,4 +24,4 @@ All datasets consist of RNA-seq count data from THP-1 macrophages under control 
 - Key immune-related pathways identified included: cytokine-cytokine receptor interaction, chemokine signaling pathway, TNF signaling pathway, NF-kB signaling pathway, and Toll-like receptor signaling pathway. These pathways are central to innate immune activation and inflammatory signaling.
 Overall, these findings reveal a highly conserved pro-inflammatory transcriptional signature in macrophages, representing a core host defense mechanism against diverse bacterial infections.
 
-# For full analysis scripts and visualizations, see the repository contents.
+*For full analysis scripts and visualizations, see the repository contents.*
