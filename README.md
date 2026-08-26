@@ -20,8 +20,8 @@ All datasets consist of RNA-seq count data from THP-1 macrophages under control 
 # Key Findings
 - A total of 108 conserved genes were identified across all four bacterial infections (Aeromonas veronii, Escherichia coli, Legionella pneumophila, and Mycobacterium tuberculosis), indicating a strong shared host transcriptional response in THP-1 macrophages.
 - The vast majority of conserved genes (105 genes) were consistently upregulated across all infections, highlighting a dominant activation of host immune responses.
-- The conserved gene set was enriched with key immune and inflammatory mediators, including CXCL11, CCL8, CD40, IFNB1, SOCS3, IL32, and TNFAIP6, indicating strong activation of cytokine and chemokine signaling pathways.
-- Key immune-related pathways identified included: cytokine-cytokine receptor interaction, chemokine signaling pathway, TNF signaling pathway, NF-kB signaling pathway, and Toll-like receptor signaling pathway. These pathways are central to innate immune activation and inflammatory signaling.
+- The conserved gene set was enriched with key immune and inflammatory mediators, including CXCL11, CCL8, IFNB1, SOCS3, IL32, and TNFAIP6 (Figure 2), indicating strong activation of cytokine and chemokine signaling pathways.
+- Key immune-related pathways identified included: cytokine-cytokine receptor interaction, chemokine signaling pathway, TNF signaling pathway, NF-kB signaling pathway, and Toll-like receptor signaling pathway (Figure 3). These pathways are central to innate immune activation and inflammatory signaling.
 Overall, these findings reveal a highly conserved pro-inflammatory transcriptional signature in macrophages, representing a core host defense mechanism against diverse bacterial infections.
 
 # Key Visualizations
@@ -37,7 +37,7 @@ Overall, these findings reveal a highly conserved pro-inflammatory transcription
 # Enriched Biological Pathways
 <img src="Figures/04_KEGG_pathways.png" width="700">
 
-**Figure 3:** KEGG pathway enrichment analysis of genes in THP-1 macrophages consistently upregulated after being infected with A. veronii AS1, E. coli K-12, L. pneumophila 130b, and M. tuberculosis H37Rv.
+**Figure 3:** KEGG pathway enrichment analysis of genes in THP-1 macrophages consistently upregulated after being infected with A. veronii AS1, E. coli K-12, L. pneumophila 130b, and M. tuberculosis H37Rv. The top 11 pathways were selected based on the lowest adjusted p-values. This result highlights key immune and inflammatory signaling pathways, including host defense and cytokine-mediated responses, commonly activated during macrophage responses to diverse bacterial infections.
 
 
 *For full analysis scripts, see the repository contents.*
