@@ -1,3 +1,0 @@
-"","ID","Description","GeneRatio","BgRatio","RichFactor","FoldEnrichment","zScore","pvalue","p.adjust","qvalue","geneID","Count","gene_symbols"
-"GO:0035589","GO:0035589","G protein-coupled purinergic nucleotide receptor signaling pathway","1/1","14/18842",0.0714285714285714,1345.85714285714,36.6722939404824,0.000743020910731307,0.00148604182146261,NA,"2857",1,"GPR34"
-"GO:0035590","GO:0035590","purinergic nucleotide receptor signaling pathway","1/1","30/18842",0.0333333333333333,628.066666666667,25.0412992208205,0.0015921876658529,0.0015921876658529,NA,"2857",1,"GPR34"
