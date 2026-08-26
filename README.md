@@ -24,7 +24,11 @@ All datasets consist of RNA-seq count data from THP-1 macrophages under control 
 - Key immune-related pathways identified included: cytokine-cytokine receptor interaction, chemokine signaling pathway, TNF signaling pathway, NF-kB signaling pathway, and Toll-like receptor signaling pathway. These pathways are central to innate immune activation and inflammatory signaling.
 Overall, these findings reveal a highly conserved pro-inflammatory transcriptional signature in macrophages, representing a core host defense mechanism against diverse bacterial infections.
 
-*For full analysis scripts and visualizations, see the repository contents.*
+# Key Visualizations
+## Differential Gene Expression Across Bacterial Infections
+<img src="Figures/01_Volcano_combined.png" width="700">
+
+*For full analysis scripts, see the repository contents.*
 
 # Author
 Daniel Boadi Danso,
