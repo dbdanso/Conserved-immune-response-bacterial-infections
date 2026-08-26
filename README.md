@@ -35,7 +35,7 @@ Overall, these findings reveal a highly conserved pro-inflammatory transcription
 **Figure 2:** Heatmap of the top 30 conserved differentially expressed genes in THP-1 macrophages across infections with A. veronii AS1, E. coli K-12, L. pneumophila 130b, and M. tuberculosis H37Rv.
 
 # Enriched Biological Pathways
-<img src="Figures/03_KEGG_pathways.png" width="700">
+<img src="Figures/04_KEGG_pathways.png" width="700">
 
 
 *For full analysis scripts, see the repository contents.*
