@@ -25,3 +25,8 @@ All datasets consist of RNA-seq count data from THP-1 macrophages under control 
 Overall, these findings reveal a highly conserved pro-inflammatory transcriptional signature in macrophages, representing a core host defense mechanism against diverse bacterial infections.
 
 *For full analysis scripts and visualizations, see the repository contents.*
+
+# Author
+Daniel Boadi Danso
+B.Sc Biochemistry
+Kwame Nkrumah University of Science and Technology (KNUST), Ghana
