@@ -27,6 +27,6 @@ Overall, these findings reveal a highly conserved pro-inflammatory transcription
 *For full analysis scripts and visualizations, see the repository contents.*
 
 # Author
-Daniel Boadi Danso
-B.Sc Biochemistry
-Kwame Nkrumah University of Science and Technology (KNUST), Ghana
+Daniel Boadi Danso,
+B.Sc Biochemistry,
+Kwame Nkrumah University of Science and Technology (KNUST), Ghana.
