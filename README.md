@@ -1,5 +1,5 @@
 # Conserved Host Response to Bacterial Infections in THP-1 Macrophages
-This study investigates conserved transcriptional responses of THP-1-derived macrophages to infection by four bacterial pathogens (Aeromonas veronii AS1, Escherichia coli K12, Legionella pneumophila 130b, and Mycobacterium tuberculosis H37Rv). Differential gene expression analysis followed by functional enrichment (Gene Ontology and KEGG) identified shared immune-related biological processes and pathways. Network analysis further revealed key genes driving these conserved responses, highlighting common host defense mechanisms across diverse bacterial infections.
+This study investigates conserved transcriptional responses of THP-1-derived macrophages to infection by four bacterial pathogens (Aeromonas veronii AS1, Escherichia coli K-12, Legionella pneumophila 130b, and Mycobacterium tuberculosis H37Rv). Differential gene expression analysis followed by functional enrichment (Gene Ontology and KEGG) identified shared immune-related biological processes and pathways. Network analysis further revealed key genes driving these conserved responses, highlighting common host defense mechanisms across diverse bacterial infections.
 
 # Data Sources
 The datasets used in this study were obtained from the NCBI Gene Expression Omnibus (GEO):
@@ -27,7 +27,7 @@ Overall, these findings reveal a highly conserved pro-inflammatory transcription
 # Key Visualizations
 ## Differential Gene Expression Across Bacterial Infections
 <img src="Figures/01_Volcano_combined.png" width="700">
-
+*Figure 1:* Combined volcano plots showing differential gene expression patterns in THP-1 macrophages infected with A. veronii AS1, E. coli K-12, L. pneumophila 130b, and M. tuberculosis H37Rv respectively. Differentially expressed genes are considered significant if p.adjust < 0.05 and log2FC >= 1 or <= -1.
 *For full analysis scripts, see the repository contents.*
 
 # Author
