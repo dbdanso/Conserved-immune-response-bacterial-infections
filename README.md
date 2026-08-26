@@ -1,5 +1,5 @@
 # Conserved Host Response to Bacterial Infections in THP-1 Macrophages
-This study investigates conserved transcriptional responses of THP-1-derived macrophages to infection by four bacterial pathogens (Aeromonas veronii AS1, Escherichia coli K-12, Legionella pneumophila 130b, and Mycobacterium tuberculosis H37Rv). Differential gene expression analysis followed by functional enrichment (Gene Ontology and KEGG) identified shared immune-related biological processes and pathways. Network analysis further revealed key genes driving these conserved responses, highlighting common host defense mechanisms across diverse bacterial infections.
+This study investigates conserved transcriptional responses of THP-1-derived macrophages to infection by four bacterial pathogens (Aeromonas veronii AS1, Escherichia coli K-12, Legionella pneumophila 130b, and Mycobacterium tuberculosis H37Rv). Differential gene expression analysis, followed by functional enrichment (Gene Ontology and KEGG), identified shared immune-related biological processes and pathways. Network analysis further revealed key genes driving these conserved responses, highlighting common host defense mechanisms across diverse bacterial infections.
 
 # Data Sources
 The datasets used in this study were obtained from the NCBI Gene Expression Omnibus (GEO):
@@ -40,7 +40,7 @@ Overall, these findings reveal a highly conserved pro-inflammatory transcription
 **Figure 3:** KEGG pathway enrichment analysis of genes in THP-1 macrophages consistently upregulated after being infected with A. veronii AS1, E. coli K-12, L. pneumophila 130b, and M. tuberculosis H37Rv. The top 11 pathways were selected based on the lowest adjusted p-values. This result highlights key immune and inflammatory signaling pathways, including host defense and cytokine-mediated responses, commonly activated during macrophage responses to diverse bacterial infections.
 
 
-*For full analysis scripts, see the repository contents.*
+*For full analysis scripts and supplementary data files, see the repository contents.*
 
 # Author
 Daniel Boadi Danso,
