@@ -37,6 +37,8 @@ Overall, these findings reveal a highly conserved pro-inflammatory transcription
 # Enriched Biological Pathways
 <img src="Figures/04_KEGG_pathways.png" width="700">
 
+**Figure 3:** KEGG pathway enrichment analysis of genes in THP-1 macrophages consistently upregulated after being infected with A. veronii AS1, E. coli K-12, L. pneumophila 130b, and M. tuberculosis H37Rv.
+
 
 *For full analysis scripts, see the repository contents.*
 
