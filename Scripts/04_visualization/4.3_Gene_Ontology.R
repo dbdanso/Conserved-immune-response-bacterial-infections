@@ -26,10 +26,10 @@ prepare_upregulated_genes <- function(merged_df) {
   gene_df <- bitr(
     gene_symbols, fromType = "SYMBOL",
     toType = "ENTREZID",OrgDb = org.Hs.eg.db
-  )
+    )
 gene_list <- gene_df$ENTREZID
   return(gene_list)
-}
+      }
 gene_list <- prepare_upregulated_genes(merged)
 
 # GO enrichment
@@ -38,12 +38,12 @@ go_up <- enrichGO(
   ont = "BP", pAdjustMethod = "BH",
   pvalueCutoff  = 0.05, qvalueCutoff  = 0.05,
   readable = TRUE
-)
+       )
 # Remove redundant GO terms
 go_up <- simplify(
   go_up, cutoff = 0.7,
   by = "p.adjust",select_fun = min
-)
+         )
 # Save full results
 go_up_df <- as.data.frame(go_up)
 write.csv(go_up_df, "Upregulated_GeneOntology.csv", row.names = FALSE)
@@ -52,31 +52,31 @@ df_top <- as.data.frame(go_up) %>%arrange(p.adjust) %>%slice(1:11)
 # Convert GeneRatio to numeric
 df_top$GeneRatio <- sapply(df_top$GeneRatio, function(x) {
   eval(parse(text = x))
-}
-)
+         }
+          )
 # Order terms for plotting
 df_top$Description <- factor(
   df_top$Description,
   levels = rev(df_top$Description)
-)
+             )
 # Plot GO dotplot
   ggplot(df_top,
        aes(x = GeneRatio,y = Description,
           size = Count,color = p.adjust)
-) +
+           ) +
 geom_point(
-) +
+         ) +
 scale_x_continuous(limits = c(0, max(df_top$GeneRatio))
-) +
+       ) +
 scale_size(range = c(2, 5)
-) +
+     ) +
 scale_color_gradientn(colors = c(high = "blue",low = "red"),
     trans = "reverse"
-) +
+    ) +
 labs(
     x = "Gene Ratio", y = "",
     title = "Top 11 Activated Biological Processes"
-) +
+   ) +
 theme_minimal(
 ) +
 theme(
