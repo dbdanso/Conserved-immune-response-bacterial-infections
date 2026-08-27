@@ -1,4 +1,4 @@
-# Integrative Transcriptional Analysis of THP-1 Macrophage Responses to Bacterial Infections
+# Integrative Transcriptomic Analysis of THP-1 Macrophage Responses to Bacterial Infections
 ## Overview
 This study investigates conserved transcriptional responses of THP-1-derived macrophages to infection by four bacterial pathogens (Aeromonas veronii AS1, Escherichia coli K-12, Legionella pneumophila 130b, and Mycobacterium tuberculosis H37Rv). Differential gene expression analysis, followed by functional enrichment (Gene Ontology and KEGG), identified shared immune-related biological processes and pathways. Network analysis further revealed key genes driving these conserved responses, highlighting common host defense mechanisms across diverse bacterial infections.
 
